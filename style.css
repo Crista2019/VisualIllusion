@@ -11,7 +11,7 @@ container {
 .rhombus {
   /* general shape */
   background: #CCC;
-  margin: 25px 50px;
+  margin: 50px 50px;
   border: 1px solid #000;
 
   /* size  */
@@ -27,7 +27,7 @@ container {
   /*TODO: PLEASE DO WHAT MUST BE DONE TO THIS SHAPE  */
   /* general shape */
   background: #CCC;
-  margin: 25px 50px;
+  margin: 50px 50px;
   border: 1px solid #CCC;
 
   /* size  */
@@ -37,4 +37,19 @@ container {
 
   /* skew  */
   transform: skewX(-45deg);
+}
+
+.test_rhombus {
+  /* this gives me the shape i want but it's not clear to me how to transform the width to make it fatter lol (also change width to 80 and height to 40 px) */
+  background: #CCC;
+  margin: 80px 50px;
+  border: 1px solid #CCC;
+
+  /* size  */
+  position: relative;
+  width: 80px;
+  height: 25px;
+
+  /* fuck it up */
+  transform: rotate(-45deg) skewX(-70deg);
 }

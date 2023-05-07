@@ -10,8 +10,21 @@
 
 <body>
   <button id=button>go bitch go</button>
-  <div class="rhombus" id="rhom1"></div>
-  <div class="rhombus2" id="rhom2"></div>
+  <div class="slidecontainer">
+    <p>Rhombus width: <span id="width_display"></span></p>
+    <input type="range" min="1" max="100" value="100" class="slider" id="myRange">
+  </div>
+
+  <div class='container'>
+    <h1>Regular Rhombus</h1>
+    <div class="rhombus" id="rhom1"></div>
+  </div>
+
+  <div class='container'>
+    <h1>Spicy Rhombus</h1>
+    <div class="rhombus2" id="rhom2"></div>
+  </div>
+
   <script src="script.js"></script>
   <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
 </body>

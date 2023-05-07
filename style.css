@@ -3,14 +3,19 @@ html {
   width: 100%;
 }
 
+container {
+  position: absolute;
+  margin: 100px auto;
+}
+
 .rhombus {
   /* general shape */
   background: #CCC;
-  margin: 50px 100px;
+  margin: 25px 50px;
   border: 1px solid #000;
 
   /* size  */
-  position: absolute;
+  position: relative;
   width: 100px;
   height: 100px;
 
@@ -19,13 +24,14 @@ html {
 }
 
 .rhombus2 {
+  /*TODO: PLEASE DO WHAT MUST BE DONE TO THIS SHAPE  */
   /* general shape */
   background: #CCC;
-  margin: 200px 100px;
+  margin: 25px 50px;
   border: 1px solid #CCC;
 
   /* size  */
-  position: absolute;
+  position: relative;
   width: 100px;
   height: 100px;
 

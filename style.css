@@ -1,0 +1,17 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.rhombus {
+  /* general shape */
+  background: #CCC;
+  margin: 100px auto;
+  border: 1px solid #000;
+
+  /* skew  */
+  width: 200px;
+  height: 200px;
+
+  transform: skewX(-45deg);
+}

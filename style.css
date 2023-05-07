@@ -6,12 +6,28 @@ html {
 .rhombus {
   /* general shape */
   background: #CCC;
-  margin: 100px auto;
+  margin: 50px 100px;
   border: 1px solid #000;
 
   /* size  */
-  width: 200px;
-  height: 200px;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+
+  /* skew  */
+  transform: skewX(-45deg);
+}
+
+.rhombus2 {
+  /* general shape */
+  background: #CCC;
+  margin: 200px 100px;
+  border: 1px solid #CCC;
+
+  /* size  */
+  position: absolute;
+  width: 100px;
+  height: 100px;
 
   /* skew  */
   transform: skewX(-45deg);

@@ -9,25 +9,30 @@
 </head>
 
 <body>
-  <button id=button>go bitch go</button>
-  <div class="slidecontainer">
-    <p>Rhombus width: <span id="width_display"></span></p>
-    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+  <div>
+    <button id=move>go/stop</button>
+    <p>Lightness: <span id="color_slider"></span></p>
+    <input type="range" min="0" max="15" value="0" class="slider" id="myRange">
   </div>
 
-  <div class='container'>
-    <h1>Regular Rhombus</h1>
-    <div class="rhombus" id="rhom1"></div>
+  <div>
+    <h1>Regular Rhombussies</h1>
+    <div class='row'>
+      <div class="rhombus" id="rhom1"></div>
+    </div>
+    <div class='row'>
+      <div class="rhombus gradient" id="rhom2"></div>
+    </div>
   </div>
 
-  <div class='container'>
-    <h1>Spicy Rhombus</h1>
-    <div class="rhombus2" id="rhom2"></div>
-  </div>
-
-  <div class='container'>
-    <h1>Ideal Thin Rhombus</h1>
-    <div class="test_rhombus"></div>
+  <div>
+    <h1>Thin Rhombussies</h1>
+    <div class='row'>
+      <div class="skinty" id="rhom3"></div>
+    </div>
+    <div class='row'>
+      <div class="skinty gradient" id="rhom4"></div>
+    </div>
   </div>
 
   <script src="script.js"></script>

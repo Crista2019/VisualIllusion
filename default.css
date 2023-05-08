@@ -1,6 +1,15 @@
-#illusion {
-  font-size: 10px;
-  height: 100px;
+/* custom CSS for project */
+#move {
+  margin: 30px 10px;
+  transition-duration: 0.4s;
+  font-size: 20px;
+  border-radius: 5%;
+  background-color: #4CAF50;
+  color: white;
+}
+
+#move:hover {
+  filter: grayscale(.5);
 }
 
 .row {

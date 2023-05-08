@@ -41,9 +41,19 @@ slider.oninput = function() {
 
 // code to move shape up and down
 go_button = document.getElementById("move");
-start_move = false
+var start_move = false
+var color = 'green';
 
 go_button.onclick = function() {
+  // change button color for fun
+  if (color == 'red') {
+    color = 'green';
+    go_button.style.backgroundColor = '#4CAF50';
+  } else {
+    color = 'red';
+    go_button.style.backgroundColor = '#f44336';
+  }
+
   var elems = [];
   // get the elements of all rhombus shapes
   for (let i = 1; i <= 6; i++) {

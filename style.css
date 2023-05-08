@@ -1,12 +1,7 @@
-html {
-  height: 100%;
-  width: 100%;
+#illusion {
+  font-size: 10px;
+  height: 100px;
 }
-
-/* .container {
-  position: absolute;
-  margin: 100px auto;
-} */
 
 .row {
   display: inline-block;

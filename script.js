@@ -14,20 +14,27 @@ slider.oninput = function() {
   output.innerHTML = rgbToHex(slider.value);
   var plain_rhoms = [];
   var grad_rhoms = [];
+  var rev_grad_rhoms = [];
   // get the elements of all rhombus shapes
-  for (let i = 1; i <= 4; i+=2) {
+  for (let i = 1; i <= 6; i += 3) {
     // only uniformly set shade for left rhoms
     plain_rhoms.push(document.getElementById("rhom" + i))
   }
   // get elements for gradient rhoms
-  for (let i = 2; i <= 4; i+=2) {
+  for (let i = 2; i <= 6; i += 3) {
     // only uniformly set shade for left rhoms
     grad_rhoms.push(document.getElementById("rhom" + i))
+  }
+  // get elements for gradient rhoms
+  for (let i = 3; i <= 6; i += 3) {
+    // only uniformly set shade for left rhoms
+    rev_grad_rhoms.push(document.getElementById("rhom" + i))
   }
   for (let i = 0; i < 2; i++) {
     color = rgbToHex(this.value);
     plain_rhoms[i].style.background = color;
-    grad_rhoms[i].style.background = 'radial-gradient('+color+', white)'
+    grad_rhoms[i].style.background = 'radial-gradient(' + color + ', white)'
+    rev_grad_rhoms[i].style.background = 'radial-gradient(white, ' + color + ')'
   }
 }
 
@@ -39,12 +46,12 @@ start_move = false
 go_button.onclick = function() {
   var elems = [];
   // get the elements of all rhombus shapes
-  for (let i = 1; i <= 4; i++) {
+  for (let i = 1; i <= 6; i++) {
     elems.push(document.getElementById("rhom" + i))
   }
 
   var id = setInterval(frame, 50); // speed up or slow down
-  var pos = 0, up = false;
+  var pos = 0, left = false;
   x_distance = 30 // how many pixels to cover left and right
 
   start_move = !start_move
@@ -53,24 +60,24 @@ go_button.onclick = function() {
 
     // i can't remember if the shapes are supposed to go up/down or left/right or by how much
     if (start_move) {
-      if (pos < x_distance && !up) {
+      if (pos < x_distance && !left) {
         pos++;
-        if (pos === x_distance) up = true;
-        for (let i = 0; i < 4; i++) {
-          elems[i].style.top = pos + 'px';
+        if (pos === x_distance) left = true;
+        for (let i = 0; i < 6; i++) {
+          elems[i].style.left = pos + 'px';
         }
       }
       else {
         pos--;
-        if (pos <= 0) up = false;
-        for (let i = 0; i < 4; i++) {
-          elems[i].style.top = pos + 'px';
+        if (pos <= 0) left = false;
+        for (let i = 0; i < 6; i++) {
+          elems[i].style.left = pos + 'px';
         }
       }
     } else {
       pos = 0, left = false;
-      for (let i = 0; i < 4; i++) {
-        elems[i].style.top = 0 + 'px';
+      for (let i = 0; i < 6; i++) {
+        elems[i].style.left = 0 + 'px';
       }
     }
   }

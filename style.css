@@ -42,3 +42,7 @@ html {
 .gradient {
   background: radial-gradient(black, white)
 }
+
+.gradient-reverse {
+  background: radial-gradient(white, black)
+}

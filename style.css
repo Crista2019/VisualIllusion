@@ -40,5 +40,5 @@ html {
 }
 
 .gradient {
-  background: linear-gradient(black, white)
+  background: radial-gradient(black, white)
 }

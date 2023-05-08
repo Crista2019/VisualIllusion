@@ -27,7 +27,7 @@ slider.oninput = function() {
   for (let i = 0; i < 2; i++) {
     color = rgbToHex(this.value);
     plain_rhoms[i].style.background = color;
-    grad_rhoms[i].style.background = 'linear-gradient('+color+', white)'
+    grad_rhoms[i].style.background = 'radial-gradient('+color+', white)'
   }
 }
 

@@ -60,9 +60,9 @@ go_button.onclick = function() {
     elems.push(document.getElementById("rhom" + i))
   }
 
-  var id = setInterval(frame, 60); // speed up or slow down
+  var id = setInterval(frame, 80); // speed up or slow down
   var pos = 0, left = false;
-  x_distance = 20 // how many pixels to cover left and right
+  x_distance = 15 // how many pixels to cover left and right
 
   start_move = !start_move
 

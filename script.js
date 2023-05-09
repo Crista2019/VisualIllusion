@@ -129,7 +129,6 @@ go_button.onclick = function() {
 
   function frame() {
 
-    // i can't remember if the shapes are supposed to go up/down or left/right or by how much
     if (start_move) {
       if (pos < x_distance && !left) {
         pos++;

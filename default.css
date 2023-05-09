@@ -43,6 +43,7 @@
   transform: rotate(-45deg) skewX(-70deg);
 }
 
+
 .gradient {
   background: radial-gradient(black, white)
 }

@@ -57,14 +57,6 @@ function toggle_grad2() {
     r6.style.display = "none";
   }
 }
-// function toggle() {
-//   var x = document.getElementById("myDIV");
-//   if (x.style.display === "none") {
-//     x.style.display = "block";
-//   } else {
-//     x.style.display = "none";
-//   }
-// }
 
 // function to create hex black and white shade from num
 function rgbToHex(c) {
@@ -116,9 +108,11 @@ go_button.onclick = function() {
   if (color == 'red') {
     color = 'green';
     go_button.style.backgroundColor = '#4CAF50';
+    go_button.innerHTML = 'GO'
   } else {
     color = 'red';
     go_button.style.backgroundColor = '#f44336';
+    go_button.innerHTML = 'STOP'
   }
 
   var elems = [];
